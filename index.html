@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <form onsubmit="return onSubmit()">
+        <div id="nombre" class="input-container">
+            <label>Nombre</label>
+            <input name="nombre" type="text" value="asdsad"/>
+            <p class="error-message"></p>
+        </div>
+        <div id="apellido" class="input-container">
+            <label>Apellido</label>
+            <input name="apellido" type="text" value="asdsad"/>
+            <p class="error-message"></p>
+        </div>
+        <div id="cantidad" class="input-container">
+            <label>Cantidad</label>
+            <input name="apellido" type="number" step="any"/>
+            <p class="error-message"></p>
+        </div>
+        <div id="email" class="input-container">
+            <label>Email</label>
+            <input name="email" type="email" value="asdsad@as.com"/>
+            <p class="error-message"></p>
+        </div>
+        <div>
+            <p id="result">Resultado: <span></span></p>
+        </div>
+        <div>
+            <button>Clean</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
